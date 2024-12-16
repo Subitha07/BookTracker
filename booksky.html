@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tracker</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .book-container {
+            background-color: black;
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 30px;
+            text-align: justify;
+
+        }
+
+        #myButton {
+            font-size: 40px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--heading-->
+    <div class="container-fluid p-3 bg-warning  d-flex justify-content-center display-3 h1 sticky-top">
+        <h1>Book Tracker</h1>
+    </div>
+
+    <div class="container p-4 ">
+        <!--content-->
+        <div class="row">
+
+            <div class="book-container  col col-sm-12 col-md-3 col-lg-3 b-2 ">
+                <h2 class="text-warning p-3">Rich Dad Poor Dad</h2>
+                <h5 class="text-info pb-2">Robert Kiyosaki</h5>
+                <p>Rich Dad Poor Dad is a personal finance book by Robert Kiyosaki that tells the story of how his real
+                    father and his best friend's father shaped his views on money and investing.
+                    The book challenges the idea that a high income is required to become wealthy, and teaches readers
+                    how to manage their finances and make money work for them
+                </p>
+
+                <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>
+            </div>
+
+            <div class="book-container  col col-sm-12 col-md-3 col-lg-3  b-2 ">
+                <h2 class="text-warning p-3">The Best Young Novelists</h2>
+                <h5 class="text-info pb-2">Colleen Hoover</h5>
+                <p>This novel is a multi-generational saga that focuses on the Buendía family, who founded the fictional
+                    town of Macondo.
+                    It explores themes of love, loss, family, and the cyclical nature of history.
+                    The story is filled with magical realism, blending the supernatural with the ordinary, as it
+                    chronicles the family's experiences, including civil war,
+                </p>
+
+                <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>
+            </div>
+
+            <div class="book-container  col col-sm-12 col-md-3 col-lg-3   b-2 ">
+                <h2 class="text-warning p-3">The Best Young Titans</h2>
+                <h5 class="text-info pb-2"> John Green</h5>
+                <p>John Green is one such author. He’s best known for his critically-acclaimed young adult fiction
+                    novels, often focused on teenage protagonists from broken families and troubled backgrounds.
+
+                    Green is praised for his ability to create real and relatable characters despite their unique
+                    circumstances
+                </p>
+
+                <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>
+            </div>
+
+            <div class="book-container  col col-sm-12 col-md-3 col-lg-3  b-2 ">
+                <h2 class="text-warning p-3">Authors Here to Stay</h2>
+                <h5 class="text-info pb-2">Stephen King</h5>
+                <p>The king of horror, Stephen King, has been enchanting readers for decades with his spine-chilling
+                    narratives.
+
+                    Stephen King’s “The Shining” remains his best-rated work, even after more than four decades of his
+                    prolific career. First published in 1977, “The Shining” has stood the test of time, appealing to
+                    multiple generations of readers.
+                </p>
+
+                <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>
+            </div>
+            <div class="book-container  col col-sm-12 col-md-3 col-lg-3  b-2 ">
+                <h2 class="text-warning p-4"> Ulysses</h2>
+                <h5 class="text-info p-2"> James Joyce</h5>
+                <p>Set in Dublin, the novel follows a day in the life of Leopold Bloom, an advertising salesman, as he
+                    navigates the city.
+                    The narrative, heavily influenced by Homer's Odyssey, explores themes of identity, heroism, and the
+                    complexities of everyday life.
+                    It is renowned for its stream-of-consciousness style and complex structure, making it a challenging
+                    but rewarding read.
+                </p>
+
+                <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>
+            </div>
+            <div class="book-container  col col-sm-12 col-md-3 col-lg-3  b-2 ">
+                <h2 class="text-warning p-3">In Search of Lost Time </h2>
+                <h5 class="text-info pb-2">Marcel Proust</h5>
+                <p>
+                    This renowned novel is a sweeping exploration of memory, love, art, and the passage of time, told
+                    through the narrator's
+                    recollections of his childhood and experiences.
+                    The narrative is notable for its lengthy and intricate involuntary memory episodes.
+                    It explores the themes of time, space and memory, but also raises questions about the nature of art
+                    and literature
+                </p>
+
+                <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--Modal to show popup-->
+    <!--symbol button-->
+    <button class="btn btn-warning ps-4 pe-4 pt-2 pb-3 rounded-pill" type="button" id="myButton" data-bs-toggle="modal"
+        data-bs-target="#mymodal">+</button>
+
+    <!--popup heading-->
+    <div class="modal fade" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content  rounded">
+                <div class="modal-header ">
+                    <h2 class="modal-title">Add Book</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!--popup content and form-->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" placeholder="Book Title" id="book-title" class="form-control">
+                            <label class="form-label">Book Title</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" placeholder="Book author" id="book-author" class="form-control">
+                            <label class="form-label">Book author</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <textarea placeholder="short description" id="book-description"
+                                class="form-control"></textarea>
+                            <label class="form-label">Short description</label>
+                        </div>
+                    </form>
+
+                </div>
+                <!--popup buttons-->
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="add-book" type="button" data-bs-dismiss="modal">Add</button>
+                    <button class="btn btn-danger" type="button" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //select container, add button,book title, book author,book description
+        var container = document.querySelector(".container")
+        var addbook = document.getElementById("add-book")
+        var bookTitle = document.getElementById("book-title")
+        var bookAuthor = document.getElementById("book-author")
+        var bookDescription = document.getElementById("book-description")
+
+
+        // creating another div tag to store another book details
+        addbook.addEventListener("click", function (event) {
+            var div = document.createElement("div")
+            div.setAttribute("class", "book-container")                         //set the div tag in book container
+            div.innerHTML = `  <h2 class="text-warning p-3">${bookTitle.value}</h2>       
+            <h5 class="text-info pb-2">${bookAuthor.value}</h5>
+            <p>${bookDescription.value}</p>
+            <button class="btn btn-outline-success p-2" onclick="deleteBook(event)">Delete</button>`        //enter the value in the another input book details
+            container.append(div)                                                                            // add many book details   
+        })
+        function deleteBook(event) {
+            event.target.parentElement.remove()                                      //delete the books
+
+        }
+
+
+    </script>
+</body>
+
+</html>
